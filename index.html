@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Records System</title>
+</head>
+<body>
+  <main>
+    <h1>Student Records System</h1>
+    <p>Class demonstration. Fictional records only.</p>
+
+    <section id="auth-section">
+      <h2>Operator sign in</h2>
+      <label>Email <input id="login-email" type="email" required /></label>
+      <label>Password <input id="login-password" type="password" required /></label>
+      <button id="login">Sign in</button>
+      <button id="register">Register</button>
+      <p id="auth-message">Sign in to continue.</p>
+    </section>
+
+    <section id="app-section" hidden>
+      <p id="signed-in-as"></p>
+      <button id="sign-out">Sign out</button>
+
+      <h2>Add or edit a student</h2>
+      <label>Student number <input id="student-no" /></label>
+      <label>First name <input id="first-name" /></label>
+      <label>Last name <input id="last-name" /></label>
+      <label>Year level <input id="year-level" type="number" /></label>
+      <label>Student email <input id="student-email" type="email" /></label>
+      <label>Course <select id="course"></select></label>
+      <button id="save-student">Save student</button>
+      <button id="clear-form">Clear form</button>
+      <p id="message"></p>
+
+      <h2>Student list</h2>
+      <label>Search name or student number <input id="search" /></label>
+      <button id="refresh-list">Refresh list</button>
+      <ul id="student-list"></ul>
+
+      <h2>Course report</h2>
+      <p>Choose a course above, then click Count students.</p>
+      <button id="count">Count students</button>
+      <p id="report"></p>
+    </section>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
